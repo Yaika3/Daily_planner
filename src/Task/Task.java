@@ -1,5 +1,7 @@
 package Task;
 
+import Exeptions.IncorrectArgumentExeption;
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Objects;
@@ -22,7 +24,7 @@ public abstract class Task {
 //        try {checkTitle(title)
 //            this.title = title;
 //        }catch (IncorrectArgumentExeption e){
-//            System.out.println("title "+ title + "/n" + e.getMassage);
+//            System.out.println("title "+ title + "/n" + e.getArgument());
 //        }throw  new IllegalArgumentException();
     }
     public int getId() {

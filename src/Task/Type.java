@@ -1,13 +1,20 @@
 package Task;
 
-public class Type {
-    String work;
-    String personal;
+public enum Type {
+    WORK("Work"),
+    PERSONAL("Personal");
+    private final String type;
 
-    public Type(String work, String personal) {
-        this.work = work;
-        this.personal = personal;
+    Type (String type){
+        this.type=type;
     }
 
+    public String getType() {
+        return type;
+    }
 
+    @Override
+    public String toString() {
+        return type ;
+    }
 }
