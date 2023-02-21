@@ -10,7 +10,7 @@ public class TaskServise {
     static Set<Task> taskSet = new HashSet<>();
 
     public static void addTask(Scanner scanner , Map<Integer , Task> taskMap){
-        Scanner scanner1 = new Scanner(System.in);
+
         Scanner scanner2 = new Scanner(System.in);
 
         System.out.println(" Название задачи " );
