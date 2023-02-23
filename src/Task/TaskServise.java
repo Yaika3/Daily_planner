@@ -8,8 +8,9 @@ import java.util.*;
 public class TaskServise {
 
     static Set<Task> taskSet = new HashSet<>();
+     static Map<Integer , Task> taskMap  = new HashMap<>();
 
-    public static void addTask(Scanner scanner , Map<Integer , Task> taskMap){
+    public static void addTask(Scanner scanner ){
 
         Scanner scanner2 = new Scanner(System.in);
 

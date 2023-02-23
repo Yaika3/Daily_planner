@@ -20,7 +20,7 @@ public class Main {
                     int menu = scanner.nextInt();
                     switch (menu){
                         case 1:
-                            addTask(scanner, tasks);
+                            addTask(scanner,tasks);
                             break ;
                         case 2:
                             removedTask(tasks);
