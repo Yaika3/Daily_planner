@@ -1,5 +1,7 @@
 package Task;
 
+import Exeptions.IncorrectArgumentExeption;
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Objects;
@@ -19,12 +21,14 @@ public abstract class Task {
         this.dateTime = LocalDateTime.now();
         if(description.isEmpty()) { description = " Пусто ";}
         this.description = description;
-//        try {checkTitle(title)
-//            this.title = title;
-//        }catch (IncorrectArgumentExeption e){
-//            System.out.println("title "+ title + "/n" + e.getMassage);
-//        }throw  new IllegalArgumentException();
+        checkTitle(title);
+        this.title = title;
+        throw  new IllegalArgumentException();
     }
+
+    private void checkTitle(String title) {
+    }
+
     public int getId() {
         return id;
     }
@@ -59,15 +63,12 @@ public abstract class Task {
     public LocalDateTime getDateTime() {
         return dateTime;
     }
-    public void appearsIn(){
-
-    }
 
     public String getDescription() {
         return description;
     }
 
-    public abstract boolean appearsIn(LocalDate inputDate, LocalDate taskdate);
+    public abstract boolean appearsIn(LocalDate inputDate,LocalDate taskdate);
 
 
     @Override

@@ -1,4 +1,5 @@
 package Exeptions;
 
-public class TaskNotFoundExeptions {
+public class TaskNotFoundExeptions extends Exception {
+    public TaskNotFoundExeptions(String messag) {super(messag);}
 }

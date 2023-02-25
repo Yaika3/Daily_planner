@@ -4,8 +4,8 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class DailyTast extends Task {
-    private final LocalDateTime dataTime;
-    private final Integer id;
+//    private final LocalDateTime dataTime;
+//    private final Integer id;
 
     public DailyTast(String title, Type type, String description) {
         super(title, type, description);
